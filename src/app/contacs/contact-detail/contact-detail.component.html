@@ -1,13 +1,13 @@
-<div class="row col-md-4">
+<div class="row">
   <div class="col-xs-12">
     <div class="panel panel-default">
       <div class="panel-heading clearfix">
-        <h2>{{ contact?.name }}</h2>
+        <h2>{{ contact.name }}</h2>
         <div class="pull-left">
           <img
-            *ngIf="contact?.imageUrl"
-            [src]="contact?.imageUrl"
-            alt="{{ contact?.name }}"
+            *ngIf="contact.imageUrl"
+            [src]="contact.imageUrl"
+            alt="{{ contact.name }}"
             class="img-responsive"
           />
         </div>
@@ -17,8 +17,8 @@
         </div>
       </div>
       <div class="panel-body">
-        <div class="list-group-item-heading">Email: {{ contact?.email }}</div>
-        <div class="list-group-item-heading">Phone: {{ contact?.phone }}</div>
+        <div class="list-group-item-heading">Email: {{ contact.email }}</div>
+        <div class="list-group-item-heading">Phone: {{ contact.phone }}</div>
       </div>
     </div>
   </div>
