@@ -12,7 +12,7 @@ export class ContacsComponent implements OnInit {
   constructor(private contactService: ContactService) {}
 
   ngOnInit(): void {
-    this.contactService.contactSelectedEvent.subscribe((contact) => {
+    this.contactService.selectedContactEvent.subscribe((contact) => {
       this.selectedContact = contact;
     });
   }

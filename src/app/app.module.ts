@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing-modules';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -16,6 +17,9 @@ import { MessageListComponent } from './messages/message-list/message-list.compo
 import { MessageItemComponent } from './messages/message-item/message-item.component';
 import { MessageEditComponent } from './messages/message-edit/message-edit.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { DocumentEditComponent } from './documents/document-edit/document-edit.component';
+import { ContactEditComponent } from './contacs/contact-edit/contact-edit.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +37,9 @@ import { DropdownDirective } from './shared/dropdown.directive';
     MessageItemComponent,
     MessageEditComponent,
     DropdownDirective,
+    DocumentEditComponent,
+    ContactEditComponent,
+    AppRoutingModule,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

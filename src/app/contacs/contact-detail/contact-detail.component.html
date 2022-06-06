@@ -5,15 +5,14 @@
         <h2>{{ contact.name }}</h2>
         <div class="pull-left">
           <img
-            *ngIf="contact.imageUrl"
             [src]="contact.imageUrl"
             alt="{{ contact.name }}"
             class="img-responsive"
           />
         </div>
         <div class="pull-right btn-toolbar">
-          <a class="btn btn-primary pad">Edit</a>
-          <a class="btn btn-danger">Delete</a>
+          <a class="btn btn-primary pad" routerLink="edit">Edit</a>
+          <a class="btn btn-danger" (click)="onDelete()">Delete</a>
         </div>
       </div>
       <div class="panel-body">
