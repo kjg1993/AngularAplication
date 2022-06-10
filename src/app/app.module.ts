@@ -39,9 +39,8 @@ import { ContactEditComponent } from './contacs/contact-edit/contact-edit.compon
     DropdownDirective,
     DocumentEditComponent,
     ContactEditComponent,
-    AppRoutingModule,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

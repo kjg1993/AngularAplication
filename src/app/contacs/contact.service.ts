@@ -35,7 +35,9 @@ export class ContactService {
     if (pos < 0) {
       return;
     }
-    this.contacts.splice(pos, 1);
-    this.contactChangedEvent.emit(this.contacts.slice());
+
+    const d = this.contacts.splice(pos, 1);
+    this.contactChangedEvent.emit(contact);
+    this.contacts.slice();
   }
 }
